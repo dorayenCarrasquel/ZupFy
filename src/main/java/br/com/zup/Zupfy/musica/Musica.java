@@ -41,4 +41,12 @@ public class Musica {
     public void setDataDeCadastro(LocalDate dataDeCadastro) {
         this.dataDeCadastro = dataDeCadastro;
     }
+
+    public Estilo getEstilo() {
+        return estilo;
+    }
+
+    public void setEstilo(Estilo estilo) {
+        this.estilo = estilo;
+    }
 }
