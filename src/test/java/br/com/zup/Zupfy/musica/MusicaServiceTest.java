@@ -36,7 +36,7 @@ public class MusicaServiceTest {
                 .thenAnswer(objto -> objto.getArgument(0, Musica.class));
 
         Musica musicaSalva = musicaService.cadastrarMusica(musica);
-
+        //test: the DataDeCadastro have to be written automatic on the cadastrarMusica Method.
         Assertions.assertEquals(LocalDate.now(), musicaSalva.getDataDeCadastro());
     }
 
